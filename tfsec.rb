@@ -8,7 +8,7 @@ class Tfsec < Formula
 
   def install
     system "scripts/install.sh"
-    bin.install ".tfsec_install/bin/tfsec" => "tfsec"
+    bin.install "tfsec" => "tfsec"
   end
 
   test do
