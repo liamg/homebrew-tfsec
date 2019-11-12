@@ -7,7 +7,7 @@ class Tfsec < Formula
   depends_on "go" => :build
 
   def install
-    system "install.sh"
+    system "scripts/install.sh"
     bin.install ".tfsec_install/bin/tfsec" => "tfsec"
   end
 
